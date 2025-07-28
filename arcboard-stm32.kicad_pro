@@ -557,7 +557,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "arcboard-stm32.step",
       "svg": "",
       "vrml": ""
     },
