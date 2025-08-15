@@ -13948,6 +13948,16 @@
 	)
 	(wire
 		(pts
+			(xy 647.7 458.47) (xy 659.13 458.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b123122-bced-4a0f-b2d7-f861666402b8")
+	)
+	(wire
+		(pts
 			(xy 424.18 223.52) (xy 424.18 219.71)
 		)
 		(stroke
@@ -16018,6 +16028,16 @@
 	)
 	(wire
 		(pts
+			(xy 647.7 461.01) (xy 659.13 461.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbfe3da8-af34-4a00-8a61-fed83f496047")
+	)
+	(wire
+		(pts
 			(xy 294.64 490.22) (xy 298.45 490.22)
 		)
 		(stroke
@@ -16095,6 +16115,16 @@
 			(type default)
 		)
 		(uuid "bef7966f-6adf-4fcf-8d3b-d294d5a13176")
+	)
+	(wire
+		(pts
+			(xy 647.7 455.93) (xy 659.13 455.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "befbd892-3e66-499c-84d2-40c4b776b17e")
 	)
 	(wire
 		(pts
@@ -16885,6 +16915,16 @@
 			(type default)
 		)
 		(uuid "e3dad56c-fa0e-484d-9b81-f30c6f8a87aa")
+	)
+	(wire
+		(pts
+			(xy 647.7 453.39) (xy 659.13 453.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3e46354-5def-4c5a-aaa8-f990b554c2bd")
 	)
 	(wire
 		(pts
@@ -17792,6 +17832,28 @@
 			)
 		)
 	)
+	(global_label "Serial_VBUS"
+		(shape input)
+		(at 659.13 458.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "17b60693-f474-4351-a29d-3d6e845dc23d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 673.4847 458.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ENCODER1_R2"
 		(shape input)
 		(at 483.87 223.52 180)
@@ -17924,6 +17986,28 @@
 			)
 		)
 	)
+	(global_label "SERIAL_CONN_TX"
+		(shape bidirectional)
+		(at 659.13 453.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "262fd882-d6f8-46c7-88d4-78c75795c9c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 678.9503 453.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ROW0"
 		(shape input)
 		(at 483.87 205.74 180)
@@ -18025,6 +18109,28 @@
 		(uuid "2adaa3ae-c483-4752-bebe-70d51442954c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 545.4566 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SERIAL_CONN_RX"
+		(shape bidirectional)
+		(at 659.13 455.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2ceda331-c69f-4dde-b7d6-95c203efa9b4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 679.2527 455.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29273,6 +29379,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 659.13 461.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a06e2cf4-31bf-4996-af1b-0c89fa6d57f1")
+		(property "Reference" "#PWR091"
+			(at 665.48 461.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 662.94 461.0099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 659.13 461.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 659.13 461.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 659.13 461.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d67d4066-bb76-49c8-8c20-c4dde181d252")
+		)
+		(instances
+			(project "arcboard-stm32"
+				(path "/77409937-8008-4619-ae71-6a56c8773006"
+					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 421.64 358.14 180)
 		(unit 1)
@@ -29743,10 +29915,10 @@
 		(lib_id "kicad-libraries:TYPE-C-31-M-13")
 		(at 654.05 408.94 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a5a2b25b-ae63-464a-be77-1e2314f332b3")
 		(property "Reference" "U12"
@@ -32017,6 +32189,80 @@
 			(project "arcboard-stm32"
 				(path "/77409937-8008-4619-ae71-6a56c8773006"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 642.62 458.47 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c98ed8d4-9d3e-4c3e-9923-7813cb18de61")
+		(property "Reference" "J1"
+			(at 643.255 448.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 643.255 450.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 642.62 458.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 642.62 458.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 642.62 458.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b71ebee8-1940-4106-96d5-8eadf18f359c")
+		)
+		(pin "2"
+			(uuid "dd38f760-1c1c-404b-b3fb-a511ea295a46")
+		)
+		(pin "4"
+			(uuid "a8a465af-cc10-490b-9271-69059f682d08")
+		)
+		(pin "3"
+			(uuid "a2999ba7-57f1-4749-8238-cbd75f1b6088")
+		)
+		(instances
+			(project ""
+				(path "/77409937-8008-4619-ae71-6a56c8773006"
+					(reference "J1")
 					(unit 1)
 				)
 			)
