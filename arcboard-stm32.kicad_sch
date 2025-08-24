@@ -21975,6 +21975,70 @@
 		)
 	)
 	(symbol
+		(lib_id "kicad-libraries:qmk-lite-logo")
+		(at 491.49 447.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d6950b5-5de0-4ecb-982a-390fee65618a")
+		(property "Reference" "LOGO6"
+			(at 494.03 445.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "**REF"
+			(at 494.03 448.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "kicad-libraries:cyboard-logo-5mm"
+			(at 491.49 447.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 491.49 447.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "cyboard logo 5mm"
+			(at 491.49 447.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "arcboard-stm32"
+				(path "/77409937-8008-4619-ae71-6a56c8773006"
+					(reference "LOGO6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 356.87 377.19 180)
 		(unit 1)
@@ -33203,6 +33267,70 @@
 			(project "arcboard-stm32"
 				(path "/77409937-8008-4619-ae71-6a56c8773006"
 					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kicad-libraries:qmk-lite-logo")
+		(at 491.49 441.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "decfebb7-e772-429c-864d-c79979f3d005")
+		(property "Reference" "LOGO5"
+			(at 494.03 440.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "**REF"
+			(at 494.03 443.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "kicad-libraries:arcboard-stm32-qr-code-10x10"
+			(at 491.49 441.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 491.49 441.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "arcboard-stm32 repo qr code"
+			(at 491.49 441.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "arcboard-stm32"
+				(path "/77409937-8008-4619-ae71-6a56c8773006"
+					(reference "LOGO5")
 					(unit 1)
 				)
 			)
