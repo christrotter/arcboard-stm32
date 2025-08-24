@@ -5395,124 +5395,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "kicad-libraries:0402WGF1002TCE"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "0402WGF1002TCE"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "footprint:R0402"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://item.szlcsc.com/323315.html"
-				(at -2.286 0.127 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC" "C25744"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "C25744"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "0402WGF1002TCE_0_1"
-				(rectangle
-					(start -2.54 1.016)
-					(end 2.54 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "kicad-libraries:0402WGF1003TCE"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -11351,6 +11233,12 @@
 		(uuid "0fd35874-0ed8-4dc5-9c3e-e3c1c6d579a3")
 	)
 	(junction
+		(at 427.99 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23890f4f-6189-4b24-8e29-a81b91c1f5f0")
+	)
+	(junction
 		(at 167.64 504.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11559,12 +11447,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e3dcda7-4df1-4684-8b90-48a791b90007")
-	)
-	(junction
-		(at 427.99 163.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "975dd310-5708-4d07-bbfe-d2aaf5d7917a")
 	)
 	(junction
 		(at 471.17 295.91)
@@ -14004,6 +13886,16 @@
 	)
 	(wire
 		(pts
+			(xy 427.99 163.83) (xy 438.15 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58b36fd2-ca91-4bde-a7ca-accca5e7d54f")
+	)
+	(wire
+		(pts
 			(xy 241.3 485.14) (xy 245.11 485.14)
 		)
 		(stroke
@@ -14344,6 +14236,16 @@
 	)
 	(wire
 		(pts
+			(xy 427.99 163.83) (xy 427.99 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6727c338-f5f2-4cac-bbed-611769f92342")
+	)
+	(wire
+		(pts
 			(xy 142.24 307.34) (xy 148.59 307.34)
 		)
 		(stroke
@@ -14441,6 +14343,16 @@
 			(type default)
 		)
 		(uuid "6fa3aa7a-9e4d-4e62-bf4d-36f144055b40")
+	)
+	(wire
+		(pts
+			(xy 427.99 172.72) (xy 427.99 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fc2e9cc-4392-4181-b0c1-809b61d8dabb")
 	)
 	(wire
 		(pts
@@ -14721,6 +14633,16 @@
 			(type default)
 		)
 		(uuid "7ca260b8-7c2e-4c0b-a241-b29dc30b0e16")
+	)
+	(wire
+		(pts
+			(xy 383.54 236.22) (xy 388.62 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cc4f0db-2993-4039-8330-4ad06c2378e6")
 	)
 	(wire
 		(pts
@@ -15104,7 +15026,7 @@
 	)
 	(wire
 		(pts
-			(xy 398.78 186.69) (xy 400.05 186.69)
+			(xy 398.78 186.69) (xy 402.59 186.69)
 		)
 		(stroke
 			(width 0)
@@ -15494,16 +15416,6 @@
 	)
 	(wire
 		(pts
-			(xy 411.48 163.83) (xy 427.99 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a27416f1-883c-492e-9762-5136351e788f")
-	)
-	(wire
-		(pts
 			(xy 781.05 199.39) (xy 784.86 199.39)
 		)
 		(stroke
@@ -15534,7 +15446,7 @@
 	)
 	(wire
 		(pts
-			(xy 427.99 163.83) (xy 438.15 163.83)
+			(xy 411.48 163.83) (xy 427.99 163.83)
 		)
 		(stroke
 			(width 0)
@@ -16134,16 +16046,6 @@
 	)
 	(wire
 		(pts
-			(xy 427.99 175.26) (xy 427.99 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd705fb6-79a3-45e2-a117-bf534c5a615f")
-	)
-	(wire
-		(pts
 			(xy 209.55 289.56) (xy 209.55 271.78)
 		)
 		(stroke
@@ -16191,16 +16093,6 @@
 			(type default)
 		)
 		(uuid "bee742ea-d087-4162-bf9d-74be513e039a")
-	)
-	(wire
-		(pts
-			(xy 386.08 236.22) (xy 388.62 236.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bef7966f-6adf-4fcf-8d3b-d294d5a13176")
 	)
 	(wire
 		(pts
@@ -17411,16 +17303,6 @@
 			(type default)
 		)
 		(uuid "f5a2ae8a-b88d-4060-91da-b39432f90e55")
-	)
-	(wire
-		(pts
-			(xy 427.99 163.83) (xy 427.99 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f67f83b5-3f5f-48b0-94c1-1a4865de1dd4")
 	)
 	(wire
 		(pts
@@ -21699,7 +21581,7 @@
 		(at 534.67 429.26 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -22889,6 +22771,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 379.73 236.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25ac9c7c-e744-42b5-8baf-470561f4fef3")
+		(property "Reference" "R16"
+			(at 379.73 233.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 379.73 236.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 379.73 237.998 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 379.73 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 379.73 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 379.73 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7410f343-0370-4f82-a44e-08cb26c9314e")
+		)
+		(pin "2"
+			(uuid "1a617002-1d2e-4222-a5e8-672abd6cdb80")
+		)
+		(instances
+			(project "arcboard-stm32"
+				(path "/77409937-8008-4619-ae71-6a56c8773006"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 180.34 316.23 0)
 		(unit 1)
@@ -23562,7 +23520,7 @@
 		(at 430.53 149.86 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -29110,165 +29068,6 @@
 		)
 	)
 	(symbol
-		(lib_id "kicad-libraries:0402WGF1002TCE")
-		(at 427.99 170.18 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9552f193-047a-452f-90e7-008c96497157")
-		(property "Reference" "R13"
-			(at 430.53 168.9099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0402WGF1002TCE"
-			(at 430.53 171.4499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 417.83 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 428.117 167.894 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "10k"
-			(at 427.99 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25744"
-			(at 427.99 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6deba9a9-4f3f-4dfa-83fe-374429fd3b60")
-		)
-		(pin "2"
-			(uuid "88afa708-a4f3-4cf2-930f-d2a944cd390a")
-		)
-		(instances
-			(project "arcboard-stm32"
-				(path "/77409937-8008-4619-ae71-6a56c8773006"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "kicad-libraries:0402WGF1002TCE")
-		(at 405.13 186.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9c4cbb1b-9e8e-46a7-9570-ef7e5064aa6f")
-		(property "Reference" "R2"
-			(at 405.13 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0402WGF1002TCE"
-			(at 399.034 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 405.13 196.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 402.844 186.563 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "10k"
-			(at 405.13 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25744"
-			(at 405.13 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2f540330-2dc1-46e8-94a3-2afd635a9566")
-		)
-		(pin "2"
-			(uuid "1defbc47-345b-479a-9e8b-a0fb4c541d92")
-		)
-		(instances
-			(project ""
-				(path "/77409937-8008-4619-ae71-6a56c8773006"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 179.07 382.27 0)
 		(unit 1)
@@ -29994,6 +29793,70 @@
 			(project "arcboard-stm32"
 				(path "/77409937-8008-4619-ae71-6a56c8773006"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "kicad-libraries:qmk-lite-logo")
+		(at 491.49 453.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a365dd23-d2b9-4c33-8130-d44f6532a085")
+		(property "Reference" "LOGO7"
+			(at 494.03 452.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "**REF"
+			(at 494.03 454.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "kicad-libraries:awesome-logo-25mm"
+			(at 491.49 453.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 491.49 453.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "cyboard logo 5mm"
+			(at 491.49 453.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "arcboard-stm32"
+				(path "/77409937-8008-4619-ae71-6a56c8773006"
+					(reference "LOGO7")
 					(unit 1)
 				)
 			)
@@ -31070,7 +30933,7 @@
 		(at 534.67 417.83 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -31145,7 +31008,7 @@
 		(dnp no)
 		(uuid "b4e621d7-e06a-4b25-96ce-dc432d62bb38")
 		(property "Reference" "C22"
-			(at 406.4 170.1799 90)
+			(at 395.732 169.418 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32224,7 +32087,7 @@
 		(at 642.62 458.47 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -32982,6 +32845,82 @@
 			(project "arcboard-stm32"
 				(path "/77409937-8008-4619-ae71-6a56c8773006"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 427.99 168.91 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d70f1f18-0fc1-4796-83cf-8431bc8fd435")
+		(property "Reference" "R2"
+			(at 425.45 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 427.99 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 429.768 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 427.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 427.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 427.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f74a4da8-f61e-4c8c-8c59-28486d24f424")
+		)
+		(pin "2"
+			(uuid "aaf339a3-3497-4541-b8e4-efbf3a5afc8e")
+		)
+		(instances
+			(project "arcboard-stm32"
+				(path "/77409937-8008-4619-ae71-6a56c8773006"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -34465,84 +34404,6 @@
 		)
 	)
 	(symbol
-		(lib_id "kicad-libraries:0402WGF1002TCE")
-		(at 381 236.22 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "edc09c39-391f-4c2d-8a44-2476ffe4666d")
-		(property "Reference" "R3"
-			(at 381 242.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0402WGF1002TCE"
-			(at 387.096 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 381 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/323315.html"
-			(at 383.286 236.347 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "10k"
-			(at 381 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25744"
-			(at 381 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5ce16bc1-c992-441b-acd3-7eeaf30aa487")
-		)
-		(pin "2"
-			(uuid "c4020c28-bd26-4909-962b-4c48b664a842")
-		)
-		(instances
-			(project "arcboard-stm32"
-				(path "/77409937-8008-4619-ae71-6a56c8773006"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 367.03 374.65 0)
 		(unit 1)
@@ -34964,6 +34825,82 @@
 			(project "arcboard-stm32"
 				(path "/77409937-8008-4619-ae71-6a56c8773006"
 					(reference "#PWR098")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 406.4 186.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa8ed368-de56-412e-990e-818d9c6a702d")
+		(property "Reference" "R3"
+			(at 406.4 184.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 406.4 186.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 406.4 188.468 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 406.4 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 406.4 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 406.4 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97bef608-2bbe-46ce-af5f-ec36068b0eb8")
+		)
+		(pin "2"
+			(uuid "c93451a0-04d7-462a-a762-2e00816e345d")
+		)
+		(instances
+			(project "arcboard-stm32"
+				(path "/77409937-8008-4619-ae71-6a56c8773006"
+					(reference "R3")
 					(unit 1)
 				)
 			)
