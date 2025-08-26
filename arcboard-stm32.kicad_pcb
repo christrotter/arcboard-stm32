@@ -3754,13 +3754,13 @@
 		(embedded_fonts no)
 		(model "packages3d/SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR.step"
 			(offset
-				(xyz -861.5679871 843.2799873 0)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 -180)
+				(xyz -0 -0 -180)
 			)
 		)
 	)
@@ -6656,13 +6656,13 @@
 		(embedded_fonts no)
 		(model "packages3d/SOT-666-6_L1.6-W1.2-P0.50-LS1.6-BL.step"
 			(offset
-				(xyz -941.9389961 839.7239874 0)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 -90)
+				(xyz -0 -0 -90)
 			)
 		)
 	)
@@ -21628,13 +21628,13 @@
 		(embedded_fonts no)
 		(model "packages3d/SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR.step"
 			(offset
-				(xyz -861.5679871 843.2799873 0)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 -180)
+				(xyz -0 -0 -180)
 			)
 		)
 	)
