@@ -10154,6 +10154,16 @@
 		)
 		(uuid "8d8e324e-c1e7-4b6d-988c-8cfe7246f628")
 	)
+	(text "v1.1: Moved from 8mhz to 12mhz crystal, to satisfy QMK defaults."
+		(exclude_from_sim no)
+		(at 481.076 278.384 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8de35224-d9f2-4935-994d-faadd184bd04")
+	)
 	(text "PAD2/3\nCOL9/10"
 		(exclude_from_sim no)
 		(at 235.712 186.182 0)
@@ -12391,16 +12401,6 @@
 			(type default)
 		)
 		(uuid "2a26f500-8ed2-4767-bcdd-41ea5fd914e8")
-	)
-	(wire
-		(pts
-			(xy 566.42 326.39) (xy 566.42 330.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a5af415-69bb-4cfa-a758-dd600a199f42")
 	)
 	(wire
 		(pts
@@ -16314,6 +16314,16 @@
 	)
 	(wire
 		(pts
+			(xy 566.42 328.93) (xy 566.42 330.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0d1d9b7-aec5-46b8-84b6-27a0552e1f46")
+	)
+	(wire
+		(pts
 			(xy 166.37 232.41) (xy 179.07 232.41)
 		)
 		(stroke
@@ -17523,6 +17533,28 @@
 		(uuid "2adaa3ae-c483-4752-bebe-70d51442954c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 545.4566 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RGB_5V"
+		(shape output)
+		(at 566.42 328.93 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c83579b-f535-4ec0-9f8d-16f6410193cf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 566.42 318.8691 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19534,28 +19566,6 @@
 			)
 		)
 	)
-	(global_label "LCD_3V3"
-		(shape output)
-		(at 88.9 345.44 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b8d21e17-9223-4aa0-9293-e902b35d641f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9 356.4685 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "COL4"
 		(shape output)
 		(at 69.85 167.64 180)
@@ -19842,28 +19852,6 @@
 			)
 		)
 	)
-	(global_label "RGB_5V"
-		(shape output)
-		(at 566.42 344.17 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ccdf794a-c374-4d3e-a66a-441f271d0972")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 566.42 354.2309 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SPI1_MOSI"
 		(shape input)
 		(at 295.91 341.63 0)
@@ -19970,6 +19958,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LCD_3V3"
+		(shape output)
+		(at 88.9 327.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d64bbb51-51ff-4555-b247-f5c464cd4aec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.9 316.6315 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -27961,7 +27971,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 88.9 327.66 0)
+		(at 88.9 345.44 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27970,7 +27980,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d7f2e8a-ef0f-47f9-af6b-3005b0d7e672")
 		(property "Reference" "#PWR083"
-			(at 88.9 331.47 0)
+			(at 88.9 341.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27979,15 +27989,16 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 88.9 322.58 0)
+			(at 91.44 346.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 327.66 0)
+			(at 88.9 345.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27996,7 +28007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 327.66 0)
+			(at 88.9 345.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28005,7 +28016,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 88.9 327.66 0)
+			(at 88.9 345.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32574,7 +32585,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2006031009_Suzhou-Liming-Elec-3225-8-00-10-10-10-A_C518154.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588879072109322240"
 			(at 480.06 266.7 0)
 			(effects
 				(font
@@ -32600,7 +32611,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C518154"
+		(property "LCSC" "C9002"
 			(at 480.06 266.7 0)
 			(effects
 				(font
@@ -33939,7 +33950,7 @@
 	(symbol
 		(lib_name "+5V_4")
 		(lib_id "power:+5V")
-		(at 566.42 326.39 0)
+		(at 566.42 344.17 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -33948,7 +33959,7 @@
 		(fields_autoplaced yes)
 		(uuid "ff10f1c2-b31e-4b00-98d4-24ead51f4c4b")
 		(property "Reference" "#PWR021"
-			(at 566.42 330.2 0)
+			(at 566.42 340.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33957,15 +33968,16 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 566.42 321.31 0)
+			(at 568.96 345.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 566.42 326.39 0)
+			(at 566.42 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33974,7 +33986,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 566.42 326.39 0)
+			(at 566.42 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33983,7 +33995,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 566.42 326.39 0)
+			(at 566.42 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33995,7 +34007,7 @@
 			(uuid "14c194d8-2a61-4af2-bbff-ae66f1d580cb")
 		)
 		(instances
-			(project ""
+			(project "arcboard-stm32"
 				(path "/77409937-8008-4619-ae71-6a56c8773006"
 					(reference "#PWR021")
 					(unit 1)
