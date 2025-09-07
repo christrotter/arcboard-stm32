@@ -3,14 +3,46 @@
 
 In the search for better performance, I moved from [RP2040](https://github.com/christrotter/mk19-rp2040) (`125mhz`) to STM32F405 (`168mhz`).  Getting familiar with STM32 also allows me more confidence to move to the H7** chips in future (`550mhz`).
 
-`This board has been submitted for production at JLC (PCBA), but not tested yet.`
+`v1.0 board has been tested - works w. 2 easy bodges & code.  Issues fixed in v1.1 - won't be ordering that, so untested - minor changes, should be fine?`
 
 Many thanks to Drashna, burkfers, GeorgeN, badjeff, and the various people (tzarc) I snaggled stuff from - as always, these projects are a community effort.
 
+<img src="images/v1.0-functional.png"  width="1200">
+
+## First run production
+<img src="images/v1.0-boards.png"  width="1200">
+
+### issues
+While things work, there are some problems...
+- both mosfets are incorrectly wired up (maybe bad footprint?), and frankly i don't see a need for them as we're not doing batteries; the original thought was 'full power down', dunno if that's a real need; clipping them off removes the issue, and there are sufficient workarounds
+- the DFU circuit cannot tolerate the LCD being plugged in; something? in that circuit prevents the cap from charging up
+  - there is something foundational here that I am not equipped to deal with atm; 'works, until 3v3 devices in play'
+
+### discoveries
+...and some 'you have to try it to know' discoveries, and secondary pcb issues...
+- 8mhz crystal is not the default in QMK -> 12mhz is; can be fixed in a few lines of code, but not ideal
+- turns out 10 ffc cables are pretty annoying and i'd have been better served moving to two custom ffc cables
+- the ffc connectors are kinda sad to use; need to make some kind of tool? -> kinda points in the direction of hot plate if i want to be choosy about parts
+- the horizontal JST-XH fit...barely... i neglected to account for 'space to slide the connector in' and so you need to trim the JST housings to avoid fouling on parts - move away from this design in future, JST-PH?
+
+### wins
+...but not all is lost:
+- remote usb port works absolutely fine
+- DFU circuit is super rad (when it works)
+- no awful bodging required this time!
+- the diode arrays work
+- STM32 cpu/etc all works
+- silkscreen looks good
+- matrix works
+- spi pmw/lcd work
+
+### conclusion
+All in all, this is a win, and it'll work for mk20.
+
 # Features
-- STM32F405RGTx w. crystal
+- STM32F405RGTx w. 12mhz crystal
 - 128mb external flash via SPI
-  - Because I Can™ by drashna® 
+  - Because I Can™ by drashna®
 - FFC connections (mostly), using VIK-footprinted 12-pin 0.5mm pitch connectors
 - Rough footprint is 60x60mm
 - Designed for remote-mount USB and split-serial ports
@@ -18,6 +50,7 @@ Many thanks to Drashna, burkfers, GeorgeN, badjeff, and the various people (tzar
 - Two-stage DFU button, on-board for convenience, headers for an external button
   - Press for reset
   - Hold for ~4s to enter DFU mode for flashing
+  - `NOTE: when 3v3 devices are connected, the hold-for-dfu stops working :'(`
 - Designed for Arcboard-mk20 peripherals
   - 4x dpad outputs (5rows, 1col, LED DI/DO, 5v/gnd)
   - 3x encoders outputs (encoder A/B, 3.3v/gnd)
@@ -110,7 +143,7 @@ This board is intended to control half of a split keyboard, so you need two.
 - [USB and Type-C demystified](https://www.st.com/content/dam/AME/2019/technology-tour-2019/chicago/presentations/T1S3_Schaumburg_USB-Type-C_G.Gosciniak.pdf)
 - [SPI flash on STM32](https://mischianti.org/stm32-add-spi-flash-memory-with-fat-fs/)
 
-# BOM
+# BOM (v1.1)
 |Designator                                  |Footprint                              |Quantity|Value               |LCSC Part #|
 |--------------------------------------------|---------------------------------------|--------|--------------------|-----------|
 |C1, C10, C20                                |0805                                   |3       |4.7uF               |C1779      |
@@ -143,7 +176,7 @@ This board is intended to control half of a split keyboard, so you need two.
 |U15                                         |SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.5|1       |TS-1187A-B-A-B      |C318884    |
 |U3                                          |LQFP-64_10x10mm_P0.5mm                 |1       |STM32F405RGTx       |C15742     |
 |U5, U6, U7, U8, U9                          |SOT-363-6_L2.0-W1.3-P0.65-LS2.1-BL     |5       |BAV70S,115          |C455031    |
-|Y1                                          |CRYSTAL-SMD_4P-L3.2-W2.5-BL-1          |1       |Crystal_GND24       |C518154    |
+|Y1                                          |CRYSTAL-SMD_4P-L3.2-W2.5-BL-1          |1       |Crystal_GND24       |C9002      |
 
 # Layout
 <img src="images/pcb-render-front.png"  width="600">
@@ -153,6 +186,7 @@ This board is intended to control half of a split keyboard, so you need two.
 <img src="images/pcb-overview.png"  width="600">
 
 # Schematic
+`NOTE: I didn't update the screenshots, sorry.  See the kicad files for the fixed mosfets.`
 <img src="images/schematic-overview.png"  width="1200">
 
 <img src="images/schematic-mcu.png"  width="600">
