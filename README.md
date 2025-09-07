@@ -3,7 +3,7 @@
 
 In the search for better performance, I moved from [RP2040](https://github.com/christrotter/mk19-rp2040) (`125mhz`) to STM32F405 (`168mhz`).  Getting familiar with STM32 also allows me more confidence to move to the H7** chips in future (`550mhz`).
 
-`v1.0 board has been tested - works w. 1 bodge & code.  Issues fixed in v1.1 - won't be ordering that, so untested - minor changes, should be fine?`
+`v1.0 board has been tested - works w. 2 easy bodges & code.  Issues fixed in v1.1 - won't be ordering that, so untested - minor changes, should be fine?`
 
 Many thanks to Drashna, burkfers, GeorgeN, badjeff, and the various people (tzarc) I snaggled stuff from - as always, these projects are a community effort.
 
