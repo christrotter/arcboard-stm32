@@ -1,3 +1,11 @@
+# 2025/11/23 update 
+
+I've, unsurprisingly, found some flaws.
+Aside from the flaws mentioned (that were fixed), there's something very wrong with the power filter circuit or power trace widths.
+Everything works, but it consumes 2x the power it should be consuming, and overwhelms the power traces so that they get rather hot.  I had to reduce brightness quite a bit to keep it at 'warm' levels.  Unfortunately I don't own an infrared camera, so only have temperature sensing by feel, but the area that gets hottest is in the power filter area.  I tried using the solder pad bypass, but no difference.
+So, feels like it's a trace problem...?  Or maybe a bad component?  Will update when I figure it out.
+If you're only running the Cyboard pcbs, PMW, dpad/paddles, it consumes about 0.25A per side.
+
 # stm32-inator
 <img src="images/header-render.png"  width="1200">
 
