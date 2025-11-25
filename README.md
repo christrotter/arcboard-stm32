@@ -1,5 +1,13 @@
-# 2025/11/23 update 
+# 2025/11/25 update
+Ok, we found the main problem.
+The Schottky diode on the main VBUS inbound power leg (just after the main polyfuse) was the problem.  After many hours of troubleshooting, we discovered that it was the thing getting hot.
+More digging revealed that it had a 1A max, and after 75C its performance tanked pretty fast.  In practice it could tolerate about 0.5A before overheating got out of hand.
+I replaced it with a bodge wire and the overheating problem went away - the board is now just warm with 1.1A going through it - probably some other components are 1A-rated.  I did not anticipate drawing this much current... my bad!
+As a side effect of removing the diode, VBUS detection no longer works properly, so that needs to be disabled in code.
 
+The next iteration will be a massive overhaul, so I'm not going to fix the problem.  In theory, we need both a higher quality component, a bigger package, and higher current rating.
+
+# 2025/11/23 update 
 I've, unsurprisingly, found some flaws.
 Aside from the flaws mentioned (that were fixed), there's something very wrong with the power filter circuit or power trace widths.
 Everything works, but it consumes 2x the power it should be consuming, and overwhelms the power traces so that they get rather hot.  I had to reduce brightness quite a bit to keep it at 'warm' levels.  Unfortunately I don't own an infrared camera, so only have temperature sensing by feel, but the area that gets hottest is in the power filter area.  I tried using the solder pad bypass, but no difference.
